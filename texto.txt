@@ -1,0 +1,26 @@
+npx cypreess run modo console
+npx cypress open modo maquina duble
+
+mochawesome // usar o recurso do duble.
+na cypreess config que configura 
+module.exports = defineConfig({
+    e2e: {
+        setupNodeEvents(on, config) {
+            { "reporter"; "mochawesome",
+                "reporterOptions"; 
+                    { "reportDir"; "cypress/report/mochawesome-report",
+                    "overwrite"; true,
+                    "html"; true,
+                    "json"; false,
+                    "timestamp"; "mmddyyyy_HHMMss" }}
+        },
+    },
+});
+
+npx cypress run --reporter mochawesome
+intermediario para executar agora
+
+> npx cypress open
+
+
+// varias pessoas utilizado e online cadastrando o time.
